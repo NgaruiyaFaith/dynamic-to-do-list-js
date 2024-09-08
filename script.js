@@ -45,11 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
     addButton.addEventListener('click', addTask);
 
     // Event listener for pressing the 'Enter' key inside the task input field
-    taskInput.addEventListener('keypress', function(event) {
+    taskInput.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') { // Check if the Enter key was pressed
+            event.preventDefault(); // Prevent form submission or default behavior
             addTask(); // Call the addTask function
         }
     });
 
 });
+
 
