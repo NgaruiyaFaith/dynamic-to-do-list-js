@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Append the task list item (li) to the unordered list (taskList)
         taskList.appendChild(li);
 
-        // Clear the task input field
+        // Clear the task input field after adding the task
         taskInput.value = "";
     }
 
@@ -52,3 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
